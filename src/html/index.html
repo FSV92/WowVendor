@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.min.css" />
+
+    <title>GameVendor</title>
+  </head>
+
+  <body>
+    <include src="src/html/includes/header.html"></include>
+
+    <main class="main">
+      <section class="breadcrumbs main__breadcumbs">
+        <div class="container breadcrumbs__container">
+          <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__item-link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__item-link" href="#">Discover</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__item-text">Games</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hero main__hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Games</h1>
+
+          <div class="hero__banner">
+            <picture>
+              <source
+                srcset="./assets/images/content/hero_mob.jpg"
+                media="(max-width: 420px)"
+              />
+
+              <img
+                class="hero__banner-bg"
+                src="./assets/images/content/hero.jpg"
+                alt="hero-bg"
+              />
+            </picture>
+            <img
+              class="hero__banner-players"
+              src="./assets/images/content/hero-players.png"
+              alt="hero-players"
+            />
+            <div class="hero__banner-info">
+              <h2 class="hero__banner-title">
+                Refer a friends and get $10 off!
+              </h2>
+              <div class="hero__banner-text">
+                Connect with friends. Refer a friend and unlock your $10 coupon!
+                Offer ends February 27.
+              </div>
+              <button class="hero__banner-btn">Invite a friend</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products main__products">
+        <div class="products__filter">
+          <div class="container products__filter-container">
+            <div class="products__search">
+              <div class="products__heading">Search for games</div>
+              <form action="#" class="products__search-form">
+                <svg class="products__search-icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+                <input
+                  name="search"
+                  class="products__search-input"
+                  type="text"
+                  placeholder="Search..."
+                />
+              </form>
+            </div>
+
+            <div class="products__category">
+              <div class="products__heading">Category</div>
+              <div class="products__category-list">
+                <div class="products__category-item">
+                  <span class="products__category-text">Strategy</span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div class="products__category-item">
+                  <span class="products__category-text">RPG</span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div
+                  class="products__category-item products__category-item--count"
+                >
+                  <span class="products__category-text">+ <span class="products__category-text-count">3</span> </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+
+                <svg class="products__arr-filter-icon">
+                  <use xlink:href="#arr-filter"></use>
+                </svg>
+              </div>
+              <div class="products__category-dropdown">
+                <div class="products__category-dropdown-item">
+                  <span class="products__category-text"> Strategy </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div class="products__category-dropdown-item">
+                  <span class="products__category-text"> RPG </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div class="products__category-dropdown-item">
+                  <span class="products__category-text"> Action </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div class="products__category-dropdown-item">
+                  <span class="products__category-text"> Shooter </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                  </svg>
+                </div>
+                <div class="products__category-dropdown-item">
+                  <span class="products__category-text"> Clear All </span>
+                  <svg class="products__category-cross">
+                    <use xlink:href="#cross"></use>
+                    t
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="sort products__sort">
+              <div class="products__heading">Sort by</div>
+              <select class="products__sort-select js-choice">
+                <option class="products__sort-item" value="Popular">
+                  Popular
+                </option>
+                <option class="products__sort-item" value="Unpopular">
+                  Unpopular
+                </option>
+              </select>
+            </div>
+
+            <button class="filter-btn products__filter-btn">
+              <svg class="products__filter-btn-icon">
+                <use xlink:href="#filt-btn"></use>
+              </svg>
+              <span class="products__filter-btn-text">Filters</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="products__tabs">
+          <div class="container products__tabs-container">
+            <div class="products__tab">
+              <span class="products__tab-text">Strategy</span>
+              <svg class="products__tab-cross">
+                <use xlink:href="#cross"></use>
+              </svg>
+            </div>
+
+            <div class="products__tab">
+              <span class="products__tab-text">RPG</span>
+              <svg class="products__tab-cross">
+                <use xlink:href="#cross"></use>
+              </svg>
+            </div>
+
+            <div class="products__tab">
+              <span class="products__tab-text">Action</span>
+              <svg class="products__tab-cross">
+                <use xlink:href="#cross"></use>
+              </svg>
+            </div>
+
+            <div class="products__tab">
+              <span class="products__tab-text">Shooter</span>
+              <svg class="products__tab-cross">
+                <use xlink:href="#cross"></use>
+              </svg>
+            </div>
+
+            <div class="products__tab">
+              <span class="products__tab-text">Clear all</span>
+              <svg class="products__tab-cross">
+                <use xlink:href="#cross"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__cards">
+          <div class="container products__cards-container">
+            <div class="products__cards-wrapper">
+              <div class="products__card-wrap">
+                <div class="products__add-card">
+                  <div class="products__add-card-text">
+                    You can add a product card by clicking on the button
+                  </div>
+                  <button class="products__add-card-btn btn-purple">
+                    <svg class="products__add-card-btn-icon">
+                      <use xlink:href="#add-card"></use>
+                    </svg>
+                    <span class="products__add-card-btn-text">Add card</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-1.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action-rpg"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action RPG</span>
+                    </div>
+                    <h3 class="products__card-title">Saints Row</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">1,820</span>
+                    </div>
+                    <div class="products__card-desc">Platinum Edition</div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-2.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--multiplayer-rpg"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text"
+                        >Multiplayer RPG</span
+                      >
+                    </div>
+                    <h3 class="products__card-title">Paladins</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--half"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">2,888</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Get the Captain Price Operator included with purchase
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-3.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action</span>
+                    </div>
+                    <h3 class="products__card-title">Far Cry 6</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">18,982</span>
+                    </div>
+                    <div class="products__card-desc">In-Game Content</div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-4.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--shooter"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Shooter</span>
+                    </div>
+                    <h3 class="products__card-title">Call of Duty: Warzone</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--half"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">1,982</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Get the Captain Price Operator included with purchase
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-5.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action</span>
+                    </div>
+                    <h3 class="products__card-title">
+                      World of Warcraft: Shadowlands
+                    </h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">982</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Includes access to World of Warcraft, Burning Crusade
+                      Classic, and WoW Classic!
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price">Free</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-6.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--shooter"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Shooter</span>
+                    </div>
+                    <h3 class="products__card-title">Fortnite</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">299,890</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Get the Captain Price Operator included with purchase
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-7.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action-rpg"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action RPG</span>
+                    </div>
+                    <h3 class="products__card-title">
+                      Horizon: Forbidden West
+                    </h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--half"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">890</span>
+                    </div>
+                    <div class="products__card-desc">Platinum Edition</div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-8.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action</span>
+                    </div>
+                    <h3 class="products__card-title">Need for Speed: Heat</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--half"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">25</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Includes access to World of Warcraft, Burning Crusade
+                      Classic, and WoW Classic!
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price">$649</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-9.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action</span>
+                    </div>
+                    <h3 class="products__card-title">
+                      Spider-Man: Miles Morales
+                    </h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">2130</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Get the Captain Price Operator included with purchase
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-10.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--card-game"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Card Game</span>
+                    </div>
+                    <h3 class="products__card-title">Witcher 3: Wild Hunt</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">9,199</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Will only be usable in the new Classic Format when it is
+                      released
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-11.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--shooter"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Shooter</span>
+                    </div>
+                    <h3 class="products__card-title">
+                      Guardians of the Galaxy
+                    </h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">29,199</span>
+                    </div>
+                    <div class="products__card-desc">In-Game Content</div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-12.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--shooter"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Shooter</span>
+                    </div>
+                    <h3 class="products__card-title">Crash Team Racing</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">4,564</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Get the Captain Price Operator included with purchase
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price-old">$1,299</span>
+                      <span class="products__card-price">$649</span>
+                      <span class="products__card-discount">-50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-13.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--multiplayer-rpg"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text"
+                        >Multiplayer RPG</span
+                      >
+                    </div>
+                    <h3 class="products__card-title">Spider-Man</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--active"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="products__card-rating-star products__card-rating-star--half"
+                        >
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">54</span>
+                    </div>
+                    <div class="products__card-desc">
+                      Includes access to World of Warcraft, Burning Crusade
+                      Classic, and WoW Classic!
+                    </div>
+                    <div class="products__card-bottom">
+                      <span class="products__card-price">$649</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="products__card-wrap">
+                <div class="products__card">
+                  <img
+                    src="./assets/images/content/prod-def.jpg"
+                    class="products__card-img"
+                  />
+                  <div class="products__card-info">
+                    <div
+                      class="products__card-genre products__card-genre--action-rpg"
+                    >
+                      <div class="products__card-genre-point"></div>
+                      <span class="products__card-genre-text">Action RPG</span>
+                    </div>
+                    <h3 class="products__card-title">Dragon Age 5</h3>
+                    <div class="products__card-rating">
+                      <div class="products__card-rating-stars">
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                        <div class="products__card-rating-star">
+                          <svg>
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="products__card-rating-count">0</span>
+                    </div>
+                    <div class="products__card-desc">Non released</div>
+                    <div class="products__card-bottom"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__pagination">
+          <div class="container products__pagination-container">
+            <svg
+              class="products__pagination-arr products__pagination-arr--inactive products__pagination-arr--left"
+            >
+              <use xlink:href="#arr-filter"></use>
+            </svg>
+            <div class="products__pagination-bullets">
+              <span
+                class="products__pagination-bullet products__pagination-bullet--current"
+                >1</span
+              >
+              <div class="products__pagination-bullet">2</div>
+              <div class="products__pagination-bullet">3</div>
+              <div class="products__pagination-bullet">4</div>
+              <div class="products__pagination-bullet">5</div>
+              <div class="products__pagination-ellipsis">...</div>
+              <div class="products__pagination-bullet">99</div>
+            </div>
+            <svg
+              class="products__pagination-arr products__pagination-arr--right"
+            >
+              <use xlink:href="#arr-filter"></use>
+            </svg>
+          </div>
+
+          <div class="container">
+            <button class="products__show-more">Show more</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="asks main__asks">
+        <div class="container asks__container">
+          <h2 class="asks__title">Frequently asked questions</h2>
+          <h3 class="asks__subtitle">
+            Everything you need to know about the games.
+          </h3>
+          <div class="asks__items">
+            <div class="asks__item">
+              <div class="asks__item-head">
+                <h4 class="asks__item-title">How does work?</h4>
+                <div class="asks__item-roll"></div>
+              </div>
+              <div class="asks__item-answer">
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback. This feedback is shown
+                  on a video display device, such as a TV set, monitor,
+                  touchscreen, or virtual reality headset. A video game or
+                  computer game is an electronic game that involves interaction
+                  with a user interface or input device – such as a joystick,
+                  controller, keyboard, or motion sensing device – to generate
+                  visual feedback. This feedback is shown on a video display
+                  device, such as a TV set, monitor, touchscreen, or virtual
+                  reality headset.
+                </div>
+                <ul class="asks__item-list">
+                  <li class="asks__item-list-item">motion sensing device,</li>
+                  <li class="asks__item-list-item">controller,</li>
+                  <li class="asks__item-list-item">keyboard,</li>
+                  <li class="asks__item-list-item">joystick.</li>
+                </ul>
+                <h5 class="asks__item-subtitle">Visual feedback.</h5>
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback.
+                </div>
+              </div>
+            </div>
+
+            <div class="asks__item">
+              <div class="asks__item-head">
+                <h4 class="asks__item-title">What is a game?</h4>
+                <div class="asks__item-roll"></div>
+              </div>
+              <div class="asks__item-answer">
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback. This feedback is shown
+                  on a video display device, such as a TV set, monitor,
+                  touchscreen, or virtual reality headset. A video game or
+                  computer game is an electronic game that involves interaction
+                  with a user interface or input device – such as a joystick,
+                  controller, keyboard, or motion sensing device – to generate
+                  visual feedback. This feedback is shown on a video display
+                  device, such as a TV set, monitor, touchscreen, or virtual
+                  reality headset.
+                </div>
+                <ul class="asks__item-list">
+                  <li class="asks__item-list-item">motion sensing device,</li>
+                  <li class="asks__item-list-item">controller,</li>
+                  <li class="asks__item-list-item">keyboard,</li>
+                  <li class="asks__item-list-item">joystick.</li>
+                </ul>
+                <h5 class="asks__item-subtitle">Visual feedback.</h5>
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback.
+                </div>
+              </div>
+            </div>
+
+            <div class="asks__item">
+              <div class="asks__item-head">
+                <h4 class="asks__item-title">
+                  Is there a free trial available?
+                </h4>
+                <div class="asks__item-roll"></div>
+              </div>
+              <div class="asks__item-answer">
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback. This feedback is shown
+                  on a video display device, such as a TV set, monitor,
+                  touchscreen, or virtual reality headset. A video game or
+                  computer game is an electronic game that involves interaction
+                  with a user interface or input device – such as a joystick,
+                  controller, keyboard, or motion sensing device – to generate
+                  visual feedback. This feedback is shown on a video display
+                  device, such as a TV set, monitor, touchscreen, or virtual
+                  reality headset.
+                </div>
+                <ul class="asks__item-list">
+                  <li class="asks__item-list-item">motion sensing device,</li>
+                  <li class="asks__item-list-item">controller,</li>
+                  <li class="asks__item-list-item">keyboard,</li>
+                  <li class="asks__item-list-item">joystick.</li>
+                </ul>
+                <h5 class="asks__item-subtitle">Visual feedback.</h5>
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback.
+                </div>
+              </div>
+            </div>
+
+            <div class="asks__item">
+              <div class="asks__item-head">
+                <h4 class="asks__item-title">How does billing work?</h4>
+                <div class="asks__item-roll"></div>
+              </div>
+              <div class="asks__item-answer">
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback. This feedback is shown
+                  on a video display device, such as a TV set, monitor,
+                  touchscreen, or virtual reality headset. A video game or
+                  computer game is an electronic game that involves interaction
+                  with a user interface or input device – such as a joystick,
+                  controller, keyboard, or motion sensing device – to generate
+                  visual feedback. This feedback is shown on a video display
+                  device, such as a TV set, monitor, touchscreen, or virtual
+                  reality headset.
+                </div>
+                <ul class="asks__item-list">
+                  <li class="asks__item-list-item">motion sensing device,</li>
+                  <li class="asks__item-list-item">controller,</li>
+                  <li class="asks__item-list-item">keyboard,</li>
+                  <li class="asks__item-list-item">joystick.</li>
+                </ul>
+                <h5 class="asks__item-subtitle">Visual feedback.</h5>
+                <div class="asks__item-paragraph">
+                  A video game or computer game is an electronic game that
+                  involves interaction with a user interface or input device –
+                  such as a joystick, controller, keyboard, or motion sensing
+                  device – to generate visual feedback.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <include src="src/html/includes/footer.html"></include>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

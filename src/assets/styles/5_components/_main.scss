@@ -1,0 +1,31 @@
+.main {
+    background-color: $grey-bg;
+}
+
+.main__hero {
+    margin-bottom: 58px;
+}
+
+.main__products {
+    margin-bottom: 80px;
+}
+
+.main__asks {
+    margin-bottom: 80px;
+}
+
+@media (max-width: map-get($tablet, lg)) {
+    .main__hero {
+        margin-bottom: 38px;
+    }
+
+    .main__products {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: map-get($mobile, lg)) {
+    .main__hero {
+        margin-bottom: 31px;
+    }
+}

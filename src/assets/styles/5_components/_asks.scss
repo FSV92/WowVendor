@@ -1,0 +1,128 @@
+.asks__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: $black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.asks__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.asks__item-answer {
+    transform: scaleY(0);
+    transform-origin: top;
+    max-height: 0;
+    transition: .3s;
+}
+
+.asks__item {
+    border-top: 1px solid $grey-border;
+
+    &:first-child {
+        border-top: none;
+    }
+
+    &--show-answer {
+        margin-bottom: 40px;
+
+        .asks__item-answer {
+            transform: scaleY(1);
+            max-height: 1000px;
+        }
+
+        .asks__item-roll {
+            background: url(./assets/images/static/roll-minus.svg) no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.asks__item-head {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asks__item-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+}
+
+.asks__item-roll {
+    width: 18px;
+    height: 18px;
+    background: url(./assets/images/static/roll-plus.svg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+.asks__item-paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+    margin-bottom: 20px;
+}
+
+.asks__item-list {
+    margin-bottom: 30px;
+    padding-left: 18px;
+}
+
+.asks__item-list-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+    margin-bottom: 6px;
+    list-style: disc;
+
+    &::marker {
+        color: $purple;
+    }
+}
+
+.asks__item-subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 16px;
+}
+
+@media (max-width: map-get($tablet, sm) - 64) {
+    .asks__title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .asks__subtitle {
+        text-align: left;
+    }
+}

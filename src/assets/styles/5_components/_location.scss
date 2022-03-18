@@ -1,0 +1,23 @@
+.location {
+    align-items: center;
+}
+
+.location__icon {
+    width: 17px;
+    height: 18px;
+    margin-right: 10px;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.location__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $dark-grey;
+}
